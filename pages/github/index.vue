@@ -48,7 +48,7 @@
                     <button class="border border-gray-400 px-3 py-1 rounded rounded-r-none flex items-center space-x-1">
                         <svg class="" viewBox="0 0 16 16" aria-hidden="true"><path fill-rule="evenodd" d="M1.679 7.932c.412-.621 1.242-1.75 2.366-2.717C5.175 4.242 6.527 3.5 8 3.5c1.473 0 2.824.742 3.955 1.715 1.124.967 1.954 2.096 2.366 2.717a.119.119 0 010 .136c-.412.621-1.242 1.75-2.366 2.717C10.825 11.758 9.473 12.5 8 12.5c-1.473 0-2.824-.742-3.955-1.715C2.92 9.818 2.09 8.69 1.679 8.068a.119.119 0 010-.136zM8 2c-1.981 0-3.67.992-4.933 2.078C1.797 5.169.88 6.423.43 7.1a1.619 1.619 0 000 1.798c.45.678 1.367 1.932 2.637 3.024C4.329 13.008 6.019 14 8 14c1.981 0 3.67-.992 4.933-2.078 1.27-1.091 2.187-2.345 2.637-3.023a1.619 1.619 0 000-1.798c-.45-.678-1.367-1.932-2.637-3.023C11.671 2.992 9.981 2 8 2zm0 8a2 2 0 100-4 2 2 0 000 4z"></path></svg>
                         <div>Watch</div>
-                        <svg class="w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                        <svg class="" height="10" width="14" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
                     </button>
                     <a href="#" class="border border-gray-400 border-l-0 font-semibold hover:text-blue-600 px-3 py-1 rounded rounded-l-none">430</a>
                 </div>
@@ -122,6 +122,306 @@
             </li>
         </ul> <!-- end repo nav -->
 
+        <div class="container mx-auto my-8 px-32 flex">
+            <div class="file-explorer-container w-3/4 mr-8">
+                <div class="branch-navigation flex items-center justify-between">
+                    <div class="flex items-center space-x-3">
+                        <button class="border border-gray-400 rounded-md px-4 py-1 hover:bg-gray-200 flex items-center space-x-2">
+                            <svg class="" height="16" viewBox="0 0 16 16" version="1.1" width="16" aria-hidden="true"><path fill-rule="evenodd" d="M11.75 2.5a.75.75 0 100 1.5.75.75 0 000-1.5zm-2.25.75a2.25 2.25 0 113 2.122V6A2.5 2.5 0 0110 8.5H6a1 1 0 00-1 1v1.128a2.251 2.251 0 11-1.5 0V5.372a2.25 2.25 0 111.5 0v1.836A2.492 2.492 0 016 7h4a1 1 0 001-1v-.628A2.25 2.25 0 019.5 3.25zM4.25 12a.75.75 0 100 1.5.75.75 0 000-1.5zM3.5 3.25a.75.75 0 111.5 0 .75.75 0 01-1.5 0z"></path></svg>
+                            <div class="font-semibold">master</div>
+                            <svg class="w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                        </button>
+                        <a href="#" class="flex items-center space-x-2 px-3 py-1 group">
+                            <svg class="fill-current text-gray-600 group-hover:text-blue-500" height="16" viewBox="0 0 16 16" version="1.1" width="16" aria-hidden="true"><path fill-rule="evenodd" d="M11.75 2.5a.75.75 0 100 1.5.75.75 0 000-1.5zm-2.25.75a2.25 2.25 0 113 2.122V6A2.5 2.5 0 0110 8.5H6a1 1 0 00-1 1v1.128a2.251 2.251 0 11-1.5 0V5.372a2.25 2.25 0 111.5 0v1.836A2.492 2.492 0 016 7h4a1 1 0 001-1v-.628A2.25 2.25 0 019.5 3.25zM4.25 12a.75.75 0 100 1.5.75.75 0 000-1.5zM3.5 3.25a.75.75 0 111.5 0 .75.75 0 01-1.5 0z"></path></svg>
+                            <span class="group-hover:text-blue-500">
+                                <span class="font-semibold">25</span>
+                                <span class="text-gray-600">branches</span>
+                            </span>
+                        </a>
+                        <a href="#" class="flex items-center space-x-2 px-3 py-1 group">
+                            <svg class="fill-current text-gray-600 group-hover:text-blue-500" height="16" viewBox="0 0 16 16" version="1.1" width="16" aria-hidden="true"><path fill-rule="evenodd" d="M2.5 7.775V2.75a.25.25 0 01.25-.25h5.025a.25.25 0 01.177.073l6.25 6.25a.25.25 0 010 .354l-5.025 5.025a.25.25 0 01-.354 0l-6.25-6.25a.25.25 0 01-.073-.177zm-1.5 0V2.75C1 1.784 1.784 1 2.75 1h5.025c.464 0 .91.184 1.238.513l6.25 6.25a1.75 1.75 0 010 2.474l-5.026 5.026a1.75 1.75 0 01-2.474 0l-6.25-6.25A1.75 1.75 0 011 7.775zM6 5a1 1 0 100 2 1 1 0 000-2z"></path></svg>
+                            <span class="group-hover:text-blue-500">
+                                <span class="font-semibold">79</span>
+                                <span class="text-gray-600">tags</span>
+                            </span>
+                        </a>
+                    </div>
+                    <div class="flex items-center space-x-2">
+                        <button class="border border-gray-400 text-gray-900 px-3 py-1 rounded-md flex items-center space-x-2">
+                            <div class="font-bold">Go to file</div>
+                        </button>
+                        <button class="border border-gray-400 text-gray-900 px-3 py-1 rounded-md flex items-center space-x-2">
+                            <div class="font-bold">Add file</div>
+                            <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                        </button>
+                        <button class="border border-green-600 text-white px-3 py-1 rounded-md bg-green-600 hover:bg-green-700 flex items-center space-x-2">
+                            <svg class="fill-current text-gray-200" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.47 10.78a.75.75 0 001.06 0l3.75-3.75a.75.75 0 00-1.06-1.06L8.75 8.44V1.75a.75.75 0 00-1.5 0v6.69L4.78 5.97a.75.75 0 00-1.06 1.06l3.75 3.75zM3.75 13a.75.75 0 000 1.5h8.5a.75.75 0 000-1.5h-8.5z"></path></svg>
+                            <div class="font-semibold">Code</div>
+                            <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                        </button>
+                    </div>
+                </div> <!-- end branch-navigation -->
+                <div class="commits-container bg-blue-100 rounded-md rounded-b-none border border-blue-200 border-b-0 flex items-center justify-between px-4 py-4 mt-5">
+                    <div class="flex items-center space-x-2">
+                        <a href=""><img height="24" width="24" alt="@SukhrobNuraliev" src="https://avatars.githubusercontent.com/u/59318027?s=60&amp;u=cd4bb5b7dabf41c1566a7334ecc3ea43f8180116&amp;v=4" class="avatar-user rounded-full"></a>
+                        <a href="#" class="font-semibold hover:underline">SukhrobNuraliev</a>
+                        <a href="#" class="hover:text-blue-600 hover:underline">2.0.1</a>
+                    </div>
+                    <div class="flex items-end">
+                        <a href="#">
+                            <svg aria-label="2 / 2 checks OK" class="octicon octicon-check" viewBox="0 0 16 16" version="1.1" width="16" height="16" role="img"><path fill-rule="evenodd" d="M13.78 4.22a.75.75 0 010 1.06l-7.25 7.25a.75.75 0 01-1.06 0L2.22 9.28a.75.75 0 011.06-1.06L6 10.94l6.72-6.72a.75.75 0 011.06 0z"></path></svg>
+                        </a>
+                        <a href="#" class="font-mono hover:text-blue-500 hover:underline ml-1 text-gray-600 text-xs">da080bd</a>
+                        <a href="#" class="hover:text-blue-500 hover:underline ml-2 text-gray-600">4 days ago</a>
+                        <a href="#" class="flex items-center ml-3">
+                            <svg class="fill-current text-gray-600 " height="16" viewBox="0 0 16 16" version="1.1" width="16" aria-hidden="true"><path fill-rule="evenodd" d="M1.643 3.143L.427 1.927A.25.25 0 000 2.104V5.75c0 .138.112.25.25.25h3.646a.25.25 0 00.177-.427L2.715 4.215a6.5 6.5 0 11-1.18 4.458.75.75 0 10-1.493.154 8.001 8.001 0 101.6-5.684zM7.75 4a.75.75 0 01.75.75v2.992l2.028.812a.75.75 0 01-.557 1.392l-2.5-1A.75.75 0 017 8.25v-3.5A.75.75 0 017.75 4z"></path></svg>
+                            <span class="">
+                                <span class="font-semibold ml-1">12</span>
+                                <span class="">commits</span>
+                            </span>
+                        </a>
+                    </div>
+                </div> <!-- end commits-container -->
+                <div class="file-explorer rounded-md rounded-t-none border border-gray-300 text-gray-700 divide-y divide-gray-300">
+                    <div class="flex justify-between px-4 py-2 hover:bg-gray-100">
+                        <div class="w-4/12 flex items-center">
+                            <svg aria-label="Directory" class="fill-current octicon octicon-file-directory text-blue-400 text-color-icon-directory" height="16" viewBox="0 0 16 16" version="1.1" width="16" role="img"><path fill-rule="evenodd" d="M1.75 1A1.75 1.75 0 000 2.75v10.5C0 14.216.784 15 1.75 15h12.5A1.75 1.75 0 0016 13.25v-8.5A1.75 1.75 0 0014.25 3h-6.5a.25.25 0 01-.2-.1l-.9-1.2c-.33-.44-.85-.7-1.4-.7h-3.5z"></path></svg>
+                            <a href="#" class="ml-2 hover:underline hover:text-blue-600">.github</a>
+                        </div>
+                        <div class="w-6/12"><a href="#" class="truncate hover:underline hover:text-blue-600">Lorem, ipsum dolor.</a></div>
+                        <div class="w-2/12 text-right">4 days ago</div>
+                    </div>
+                    <div class="flex justify-between px-4 py-2 hover:bg-gray-100">
+                        <div class="w-4/12 flex items-center">
+                            <svg aria-label="Directory" class="fill-current octicon octicon-file-directory text-blue-400 text-color-icon-directory" height="16" viewBox="0 0 16 16" version="1.1" width="16" role="img"><path fill-rule="evenodd" d="M1.75 1A1.75 1.75 0 000 2.75v10.5C0 14.216.784 15 1.75 15h12.5A1.75 1.75 0 0016 13.25v-8.5A1.75 1.75 0 0014.25 3h-6.5a.25.25 0 01-.2-.1l-.9-1.2c-.33-.44-.85-.7-1.4-.7h-3.5z"></path></svg>
+                            <a href="#" class="ml-2 hover:underline hover:text-blue-600">__tests__</a>
+                        </div>
+                        <div class="w-6/12"><a href="#" class="truncate hover:underline hover:text-blue-600">Lorem, ipsum.</a></div>
+                        <div class="w-2/12 text-right">2 weeks ago</div>
+                    </div>
+                    <div class="flex justify-between px-4 py-2 hover:bg-gray-100">
+                        <div class="w-4/12 flex items-center">
+                            <svg aria-label="Directory" class="fill-current octicon octicon-file-directory text-blue-400 text-color-icon-directory" height="16" viewBox="0 0 16 16" version="1.1" width="16" role="img"><path fill-rule="evenodd" d="M1.75 1A1.75 1.75 0 000 2.75v10.5C0 14.216.784 15 1.75 15h12.5A1.75 1.75 0 0016 13.25v-8.5A1.75 1.75 0 0014.25 3h-6.5a.25.25 0 01-.2-.1l-.9-1.2c-.33-.44-.85-.7-1.4-.7h-3.5z"></path></svg>
+                            <a href="#" class="ml-2 hover:underline hover:text-blue-600">dist</a>
+                        </div>
+                        <div class="w-6/12"><a href="#" class="truncate hover:underline hover:text-blue-600">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</a></div>
+                        <div class="w-2/12 text-right">16 days ago</div>
+                    </div>
+                    <div class="flex justify-between px-4 py-2 hover:bg-gray-100">
+                        <div class="w-4/12 flex items-center">
+                            <svg aria-label="Directory" class="fill-current octicon octicon-file-directory text-blue-400 text-color-icon-directory" height="16" viewBox="0 0 16 16" version="1.1" width="16" role="img"><path fill-rule="evenodd" d="M1.75 1A1.75 1.75 0 000 2.75v10.5C0 14.216.784 15 1.75 15h12.5A1.75 1.75 0 0016 13.25v-8.5A1.75 1.75 0 0014.25 3h-6.5a.25.25 0 01-.2-.1l-.9-1.2c-.33-.44-.85-.7-1.4-.7h-3.5z"></path></svg>
+                            <a href="#" class="ml-2 hover:underline hover:text-blue-600">jest</a>
+                        </div>
+                        <div class="w-6/12"><a href="#" class="truncate hover:underline hover:text-blue-600">Lorem, ipsum dolor. Lorem, ipsum.</a></div>
+                        <div class="w-2/12 text-right">4 months ago</div>
+                    </div>
+                    <div class="flex justify-between px-4 py-2 hover:bg-gray-100">
+                        <div class="w-4/12 flex items-center">
+                            <svg aria-label="Directory" class="fill-current octicon octicon-file-directory text-blue-400 text-color-icon-directory" height="16" viewBox="0 0 16 16" version="1.1" width="16" role="img"><path fill-rule="evenodd" d="M1.75 1A1.75 1.75 0 000 2.75v10.5C0 14.216.784 15 1.75 15h12.5A1.75 1.75 0 0016 13.25v-8.5A1.75 1.75 0 0014.25 3h-6.5a.25.25 0 01-.2-.1l-.9-1.2c-.33-.44-.85-.7-1.4-.7h-3.5z"></path></svg>
+                            <a href="#" class="ml-2 hover:underline hover:text-blue-600">scripts</a>
+                        </div>
+                        <div class="w-6/12"><a href="#" class="truncate hover:underline hover:text-blue-600">Lorem, ipsum dolor Lorem, ipsum dolor.</a></div>
+                        <div class="w-2/12 text-right">5 months ago</div>
+                    </div>
+                    <div class="flex justify-between px-4 py-2 hover:bg-gray-100">
+                        <div class="w-4/12 flex items-center">
+                            <svg aria-label="File" class="fill-current octicon octicon-file text-gray-600 text-gray-light" height="16" viewBox="0 0 16 16" version="1.1" width="16" role="img"><path fill-rule="evenodd" d="M3.75 1.5a.25.25 0 00-.25.25v11.5c0 .138.112.25.25.25h8.5a.25.25 0 00.25-.25V6H9.75A1.75 1.75 0 018 4.25V1.5H3.75zm5.75.56v2.19c0 .138.112.25.25.25h2.19L9.5 2.06zM2 1.75C2 .784 2.784 0 3.75 0h5.086c.464 0 .909.184 1.237.513l3.414 3.414c.329.328.513.773.513 1.237v8.086A1.75 1.75 0 0112.25 15h-8.5A1.75 1.75 0 012 13.25V1.75z"></path></svg>
+                            <a href="#" class="ml-2 hover:underline hover:text-blue-600">.editconfig</a>
+                        </div>
+                        <div class="w-6/12"><a href="#" class="truncate hover:underline hover:text-blue-600">Lorem ipsum dolor sit.</a></div>
+                        <div class="w-2/12 text-right">6 months ago</div>
+                    </div>
+                    <div class="flex justify-between px-4 py-2 hover:bg-gray-100">
+                        <div class="w-4/12 flex items-center">
+                            <svg aria-label="File" class="fill-current octicon octicon-file text-gray-600 text-gray-light" height="16" viewBox="0 0 16 16" version="1.1" width="16" role="img"><path fill-rule="evenodd" d="M3.75 1.5a.25.25 0 00-.25.25v11.5c0 .138.112.25.25.25h8.5a.25.25 0 00.25-.25V6H9.75A1.75 1.75 0 018 4.25V1.5H3.75zm5.75.56v2.19c0 .138.112.25.25.25h2.19L9.5 2.06zM2 1.75C2 .784 2.784 0 3.75 0h5.086c.464 0 .909.184 1.237.513l3.414 3.414c.329.328.513.773.513 1.237v8.086A1.75 1.75 0 0112.25 15h-8.5A1.75 1.75 0 012 13.25V1.75z"></path></svg>
+                            <a href="#" class="ml-2 hover:underline hover:text-blue-600">.eslintignore</a>
+                        </div>
+                        <div class="w-6/12"><a href="#" class="truncate hover:underline hover:text-blue-600">Lorem ipsum dolor sit amet.</a></div>
+                        <div class="w-2/12 text-right">14 days ago</div>
+                    </div>
+                    <div class="flex justify-between px-4 py-2 hover:bg-gray-100">
+                        <div class="w-4/12 flex items-center">
+                            <svg aria-label="File" class="fill-current octicon octicon-file text-gray-600 text-gray-light" height="16" viewBox="0 0 16 16" version="1.1" width="16" role="img"><path fill-rule="evenodd" d="M3.75 1.5a.25.25 0 00-.25.25v11.5c0 .138.112.25.25.25h8.5a.25.25 0 00.25-.25V6H9.75A1.75 1.75 0 018 4.25V1.5H3.75zm5.75.56v2.19c0 .138.112.25.25.25h2.19L9.5 2.06zM2 1.75C2 .784 2.784 0 3.75 0h5.086c.464 0 .909.184 1.237.513l3.414 3.414c.329.328.513.773.513 1.237v8.086A1.75 1.75 0 0112.25 15h-8.5A1.75 1.75 0 012 13.25V1.75z"></path></svg>
+                            <a href="#" class="ml-2 hover:underline hover:text-blue-600">plugin.js</a>
+                        </div>
+                        <div class="w-6/12"><a href="#" class="truncate hover:underline hover:text-blue-600">Lorem ipsum, dolor sit amet consectetur adipisicing.</a></div>
+                        <div class="w-2/12 text-right">2 weeks ago</div>
+                    </div>
+                    <div class="flex justify-between px-4 py-2 hover:bg-gray-100">
+                        <div class="w-4/12 flex items-center">
+                            <svg aria-label="File" class="fill-current octicon octicon-file text-gray-600 text-gray-light" height="16" viewBox="0 0 16 16" version="1.1" width="16" role="img"><path fill-rule="evenodd" d="M3.75 1.5a.25.25 0 00-.25.25v11.5c0 .138.112.25.25.25h8.5a.25.25 0 00.25-.25V6H9.75A1.75 1.75 0 018 4.25V1.5H3.75zm5.75.56v2.19c0 .138.112.25.25.25h2.19L9.5 2.06zM2 1.75C2 .784 2.784 0 3.75 0h5.086c.464 0 .909.184 1.237.513l3.414 3.414c.329.328.513.773.513 1.237v8.086A1.75 1.75 0 0112.25 15h-8.5A1.75 1.75 0 012 13.25V1.75z"></path></svg>
+                            <a href="#" class="ml-2 hover:underline hover:text-blue-600">README.md</a>
+                        </div>
+                        <div class="w-6/12"><a href="#" class="truncate hover:underline hover:text-blue-600">Lorem ipsum dolor sit amet.</a></div>
+                        <div class="w-2/12 text-right">4 months ago</div>
+                    </div>
+                    <div class="flex justify-between px-4 py-2 hover:bg-gray-100">
+                        <div class="w-4/12 flex items-center">
+                            <svg aria-label="File" class="fill-current octicon octicon-file text-gray-600 text-gray-light" height="16" viewBox="0 0 16 16" version="1.1" width="16" role="img"><path fill-rule="evenodd" d="M3.75 1.5a.25.25 0 00-.25.25v11.5c0 .138.112.25.25.25h8.5a.25.25 0 00.25-.25V6H9.75A1.75 1.75 0 018 4.25V1.5H3.75zm5.75.56v2.19c0 .138.112.25.25.25h2.19L9.5 2.06zM2 1.75C2 .784 2.784 0 3.75 0h5.086c.464 0 .909.184 1.237.513l3.414 3.414c.329.328.513.773.513 1.237v8.086A1.75 1.75 0 0112.25 15h-8.5A1.75 1.75 0 012 13.25V1.75z"></path></svg>
+                            <a href="#" class="ml-2 hover:underline hover:text-blue-600">tailwind.css</a>
+                        </div>
+                        <div class="w-6/12"><a href="#" class="truncate hover:underline hover:text-blue-600">Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, minima! Provident.</a></div>
+                        <div class="w-2/12 text-right">5 months ago</div>
+                    </div>
+                    <div class="flex justify-between px-4 py-2 hover:bg-gray-100">
+                        <div class="w-4/12 flex items-center">
+                            <svg aria-label="File" class="fill-current octicon octicon-file text-gray-600 text-gray-light" height="16" viewBox="0 0 16 16" version="1.1" width="16" role="img"><path fill-rule="evenodd" d="M3.75 1.5a.25.25 0 00-.25.25v11.5c0 .138.112.25.25.25h8.5a.25.25 0 00.25-.25V6H9.75A1.75 1.75 0 018 4.25V1.5H3.75zm5.75.56v2.19c0 .138.112.25.25.25h2.19L9.5 2.06zM2 1.75C2 .784 2.784 0 3.75 0h5.086c.464 0 .909.184 1.237.513l3.414 3.414c.329.328.513.773.513 1.237v8.086A1.75 1.75 0 0112.25 15h-8.5A1.75 1.75 0 012 13.25V1.75z"></path></svg>
+                            <a href="#" class="ml-2 hover:underline hover:text-blue-600">package.json</a>
+                        </div>
+                        <div class="w-6/12"><a href="#" class="truncate hover:underline hover:text-blue-600">Lorem ipsum dolor sit amet.</a></div>
+                        <div class="w-2/12 text-right">6 months ago</div>
+                    </div>
+                </div> <!-- end file-explorer -->
+                <div class="readme-container rounded-md border border-gray-400 px-4 py-4 mt-4">
+                    <h4 class="font-semibold">README.md</h4>
+                    <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia iusto dolorum hic dolor perspiciatis nemo dolores eaque numquam? Dignissimos laboriosam obcaecati nesciunt voluptatum quos. Dolorem nemo nulla quasi ullam similique excepturi officiis porro voluptate ad minus eligendi, totam, recusandae inventore! Provident eius ipsa eligendi corrupti! Dolores porro quis rerum corrupti ex optio soluta voluptatibus ipsum sit vero. Ipsum qui recusandae facere voluptate voluptatem, tempore quidem vero quibusdam inventore laboriosam rem quasi, ad magnam magni, perspiciatis labore dignissimos quam. Nihil laudantium quia porro aut culpa dolorem sint nesciunt sapiente, illum quisquam temporibus! Tenetur exercitationem minus repellat deleniti voluptates. Labore neque magnam recusandae, quis culpa cupiditate laudantium nesciunt vero vel, praesentium, molestias quaerat unde. Incidunt vel cumque maxime ea sunt, nisi deleniti nemo in eaque atque, distinctio unde iusto necessitatibus dicta rerum voluptatibus suscipit nesciunt tenetur sed dolor nobis. Perspiciatis quo quam harum dolore tempora ducimus aspernatur, nihil necessitatibus, laboriosam, maiores doloribus expedita! Odit necessitatibus voluptates, perspiciatis consequatur reiciendis nobis. Sapiente quis praesentium laboriosam iure voluptates ullam necessitatibus deserunt officia itaque, architecto autem asperiores optio, sunt voluptatem aliquam, vero provident facere eius accusamus magnam inventore aspernatur rerum nemo. Sed aperiam velit temporibus voluptate voluptates culpa excepturi, hic itaque cum laborum quam nobis!</div>
+                </div>
+            </div>
+            <div class="sidebar w-1/4 pr-4">
+                <div class="about">
+                    <h4 class="text-base font-semibold">About</h4>
+                    <p>A utility-first CSS framework for rapid UI development.</p>
+
+                    <div class="flex items-center space-x-1 mt-4">
+                        <svg class="octicon octicon-link flex-shrink-0 mr-2" height="16" viewBox="0 0 16 16" version="1.1" width="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg>
+                        <a class="text-blue-600 hover:underline font-semibold" href="#">tailwindcss.com</a>
+                    </div>
+
+                    <div class="flex flex-wrap font-semibold items-center mt-2 tags text-xs">
+                        <a href="#" class="bg-blue-100 hover:bg-blue-200 mr-2 mt-2 px-2 py-1 rounded-full text-blue-600">tailwindcss</a>
+                        <a href="#" class="bg-blue-100 hover:bg-blue-200 mr-2 mt-2 px-2 py-1 rounded-full text-blue-600">css</a>
+                        <a href="#" class="bg-blue-100 hover:bg-blue-200 mr-2 mt-2 px-2 py-1 rounded-full text-blue-600">css-framework</a>
+                        <a href="#" class="bg-blue-100 hover:bg-blue-200 mr-2 mt-2 px-2 py-1 rounded-full text-blue-600">postcss</a>
+                        <a href="#" class="bg-blue-100 hover:bg-blue-200 mr-2 mt-2 px-2 py-1 rounded-full text-blue-600">functional-css</a>
+                        <a href="#" class="bg-blue-100 hover:bg-blue-200 mr-2 mt-2 px-2 py-1 rounded-full text-blue-600">utility-classes</a>
+                        <a href="#" class="bg-blue-100 hover:bg-blue-200 mr-2 mt-2 px-2 py-1 rounded-full text-blue-600">responsive</a>
+                    </div>
+
+                    <div class="flex items-center space-x-1 mt-4 group">
+                        <svg class="group-hover:text-blue-400 fill-current octicon octicon-book mr-2" height="16" viewBox="0 0 16 16" version="1.1" width="16" aria-hidden="true"><path fill-rule="evenodd" d="M0 1.75A.75.75 0 01.75 1h4.253c1.227 0 2.317.59 3 1.501A3.744 3.744 0 0111.006 1h4.245a.75.75 0 01.75.75v10.5a.75.75 0 01-.75.75h-4.507a2.25 2.25 0 00-1.591.659l-.622.621a.75.75 0 01-1.06 0l-.622-.621A2.25 2.25 0 005.258 13H.75a.75.75 0 01-.75-.75V1.75zm8.755 3a2.25 2.25 0 012.25-2.25H14.5v9h-3.757c-.71 0-1.4.201-1.992.572l.004-7.322zm-1.504 7.324l.004-5.073-.002-2.253A2.25 2.25 0 005.003 2.5H1.5v9h3.757a3.75 3.75 0 011.994.574z"></path></svg>
+                        <a class="group-hover:text-blue-400 font-medium text-gray-500" href="#">Readme</a>
+                    </div>
+                    <div class="flex items-center space-x-1 mt-4 group">
+                        <svg class="group-hover:text-blue-400 fill-current octicon octicon-law mr-2" height="16" viewBox="0 0 16 16" version="1.1" width="16" aria-hidden="true"><path fill-rule="evenodd" d="M8.75.75a.75.75 0 00-1.5 0V2h-.984c-.305 0-.604.08-.869.23l-1.288.737A.25.25 0 013.984 3H1.75a.75.75 0 000 1.5h.428L.066 9.192a.75.75 0 00.154.838l.53-.53-.53.53v.001l.002.002.002.002.006.006.016.015.045.04a3.514 3.514 0 00.686.45A4.492 4.492 0 003 11c.88 0 1.556-.22 2.023-.454a3.515 3.515 0 00.686-.45l.045-.04.016-.015.006-.006.002-.002.001-.002L5.25 9.5l.53.53a.75.75 0 00.154-.838L3.822 4.5h.162c.305 0 .604-.08.869-.23l1.289-.737a.25.25 0 01.124-.033h.984V13h-2.5a.75.75 0 000 1.5h6.5a.75.75 0 000-1.5h-2.5V3.5h.984a.25.25 0 01.124.033l1.29.736c.264.152.563.231.868.231h.162l-2.112 4.692a.75.75 0 00.154.838l.53-.53-.53.53v.001l.002.002.002.002.006.006.016.015.045.04a3.517 3.517 0 00.686.45A4.492 4.492 0 0013 11c.88 0 1.556-.22 2.023-.454a3.512 3.512 0 00.686-.45l.045-.04.01-.01.006-.005.006-.006.002-.002.001-.002-.529-.531.53.53a.75.75 0 00.154-.838L13.823 4.5h.427a.75.75 0 000-1.5h-2.234a.25.25 0 01-.124-.033l-1.29-.736A1.75 1.75 0 009.735 2H8.75V.75zM1.695 9.227c.285.135.718.273 1.305.273s1.02-.138 1.305-.273L3 6.327l-1.305 2.9zm10 0c.285.135.718.273 1.305.273s1.02-.138 1.305-.273L13 6.327l-1.305 2.9z"></path></svg>
+                        <a class="group-hover:text-blue-400 font-medium text-gray-500" href="#">MIT License</a>
+                    </div>
+                </div> <!-- /about -->
+                <div class="releases border-t border-gray-400 mt-6 pt-6">
+                    <h4 class="text-base font-semibold flex items-center">
+                        <span>Releases</span>
+                        <div class="text-xs rounded-lg bg-gray-300 px-2 ml-1 mt-1">79</div>
+                    </h4>
+
+                    <a href="#" class="flex items-start mt-4 group">
+                        <svg class="octicon octicon-tag flex-shrink-0 mt-1 text-green" height="16" viewBox="0 0 16 16" version="1.1" width="16" aria-hidden="true"><path fill-rule="evenodd" d="M2.5 7.775V2.75a.25.25 0 01.25-.25h5.025a.25.25 0 01.177.073l6.25 6.25a.25.25 0 010 .354l-5.025 5.025a.25.25 0 01-.354 0l-6.25-6.25a.25.25 0 01-.073-.177zm-1.5 0V2.75C1 1.784 1.784 1 2.75 1h5.025c.464 0 .91.184 1.238.513l6.25 6.25a1.75 1.75 0 010 2.474l-5.026 5.026a1.75 1.75 0 01-2.474 0l-6.25-6.25A1.75 1.75 0 011 7.775zM6 5a1 1 0 100 2 1 1 0 000-2z"></path></svg>
+                        <span class="ml-2">
+                            <span class="font-semibold group-hover:text-blue-600">v1.5.1</span>
+                            <span class="border border-green-500 font-semibold ml-1 px-2 rounded-full text-green-600 text-xs">Latest</span>
+                            <span class="block text-xs group-hover:text-blue-600">6 days ago</span>
+                        </span>
+                    </a>
+
+                    <div class="mt-4">
+                        <a href="#" class="text-blue-600 hover:underline text-xs">+ 78 releases</a>
+                    </div>
+
+                </div> <!-- /releases -->
+                <div class="used-by border-t border-gray-400 mt-6 pt-6">
+                    <h4 class="text-base font-semibold flex items-center">
+                        <span>Used by</span>
+                        <div class="text-xs rounded-lg bg-gray-300 px-2 ml-1 mt-1">5,000+</div>
+                    </h4>
+
+                    <div class="mt-4">
+                        <a href="#" class="flex items-center -space-x-3">
+                            <img src="https://randomuser.me/api/portraits/men/97.jpg" class="w-8 border-2 border-white rounded-full" alt="">
+                            <img src="https://randomuser.me/api/portraits/men/86.jpg" class="w-8 border-2 border-white rounded-full" alt="">
+                            <img src="https://uifaces.co/our-content/donated/rSuiu_Hr.jpg" class="w-8 border-2 border-white rounded-full" alt="">
+                            <img src="https://randomuser.me/api/portraits/men/86.jpg" class="w-8 border-2 border-white rounded-full" alt="">
+                            <img src="https://randomuser.me/api/portraits/men/97.jpg" class="w-8 border-2 border-white rounded-full" alt="">
+                            <img src="https://uifaces.co/our-content/donated/1H_7AxP0.jpg" class="w-8 border-2 border-white rounded-full" alt="">
+                            <img src="https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?crop=faces&fit=crop&h=200&w=200&auto=compress&cs=tinysrgb" class="w-8 border-2 border-white rounded-full" alt="">
+                            <img src="https://uifaces.co/our-content/donated/rSuiu_Hr.jpg" class="w-8 border-2 border-white rounded-full" alt="">
+                            <span class="text-xs text-blue-600 font-semibold hover:underline" style="margin-left:0.5rem">+ 58,357</span>
+                        </a>
+                    </div>
+
+                </div> <!-- /used-by -->
+                <div class="contributors border-t border-gray-400 mt-6 pt-6">
+                    <h4 class="text-base font-semibold flex items-center">
+                        <span>Contributors</span>
+                        <div class="text-xs rounded-lg bg-gray-300 px-2 ml-1 mt-1">115</div>
+                    </h4>
+
+                    <div class="flex items-center flex-wrap mt-2">
+                        <a href="#"><img src="https://randomuser.me/api/portraits/men/97.jpg" class="w-8 rounded-full mr-2 mt-2" alt=""></a>
+                        <a href="#"><img src="https://randomuser.me/api/portraits/men/86.jpg" class="w-8 rounded-full mr-2 mt-2" alt=""></a>
+                        <a href="#"><img src="https://randomuser.me/api/portraits/men/97.jpg" class="w-8 rounded-full mr-2 mt-2" alt=""></a>
+                        <a href="#"><img src="https://uifaces.co/our-content/donated/rSuiu_Hr.jpg" class="w-8 rounded-full mr-2 mt-2" alt=""></a>
+                        <a href="#"><img src="https://uifaces.co/our-content/donated/1H_7AxP0.jpg" class="w-8 rounded-full mr-2 mt-2" alt=""></a>
+                        <a href="#"><img src="https://randomuser.me/api/portraits/men/97.jpg" class="w-8 rounded-full mr-2 mt-2" alt=""></a>
+                        <a href="#"><img src="https://uifaces.co/our-content/donated/1H_7AxP0.jpg" class="w-8 rounded-full mr-2 mt-2" alt=""></a>
+                        <a href="#"><img src="https://uifaces.co/our-content/donated/1H_7AxP0.jpg" class="w-8 rounded-full mr-2 mt-2" alt=""></a>
+                        <a href="#"><img src="https://uifaces.co/our-content/donated/rSuiu_Hr.jpg" class="w-8 rounded-full mr-2 mt-2" alt=""></a>
+                    </div>
+
+                    <div class="mt-4">
+                        <a href="#" class="text-blue-600 hover:underline text-xs">+ 104 contributors</a>
+                    </div>
+                </div> <!-- /contributors -->
+                <div class="languages border-t border-gray-400 mt-6 pt-6">
+                    <h4 class="text-base font-semibold flex items-center">
+                        <span>Languages</span>
+                    </h4>
+
+                    <div class="mt-4 flex">
+                        <div class="w-11/12 h-2 rounded-md rounded-r-none bg-purple-700"></div>
+                        <div class="w-1/12 h-2 rounded-md rounded-l-none bg-yellow-400"></div>
+                    </div>
+                    <ul class="mt-2 flex space-x-8 items-center text-xs">
+                        <li class="flex items-center">
+                            <span class="w-2 h-2 rounded-full bg-purple-700"></span>
+                            <span class="ml-4">
+                                <span class="font-semibold">CSS</span>
+                                <span>93.9%</span>
+                            </span>
+                        </li>
+                        <li class="flex items-center">
+                            <span class="w-2 h-2 rounded-full bg-yellow-400"></span>
+                            <span class="ml-4">
+                                <span class="font-semibold">JS</span>
+                                <span>6.1%</span>
+                            </span>
+                        </li>
+                    </ul>
+                </div> <!-- /languages -->
+
+            </div> <!-- end sidebar -->
+        </div>
+
+        <footer class="container mx-auto text-xs border-t border-gray-400 py-10 flex items-center justify-between">
+            <ul class="flex items-center space-x-12">
+                <li>&copy; 2021 GitHub, Inc,</li>
+                <li><a class="text-blue-600 hover:underline" href="#">Terms</a></li>
+                <li><a class="text-blue-600 hover:underline" href="#">Privacy</a></li>
+                <li><a class="text-blue-600 hover:underline" href="#">Security</a></li>
+                <li><a class="text-blue-600 hover:underline" href="#">Status</a></li>
+                <li><a class="text-blue-600 hover:underline" href="#">Docs</a></li>
+            </ul>
+            <div class="mx-16">
+                <a href="#">
+                    <svg height="24" class="fill-current hover:text-gray-500 octicon octicon-mark-github text-gray-400" viewBox="0 0 16 16" version="1.1" width="24" aria-hidden="true"><path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"></path></svg>
+                </a>
+            </div>
+            <ul class="flex items-center space-x-12">
+                <li><a class="text-blue-600 hover:underline" href="#">Contact GitHub</a></li>
+                <li><a class="text-blue-600 hover:underline" href="#">Pricing</a></li>
+                <li><a class="text-blue-600 hover:underline" href="#">API</a></li>
+                <li><a class="text-blue-600 hover:underline" href="#">Training</a></li>
+                <li><a class="text-blue-600 hover:underline" href="#">Blog</a></li>
+                <li><a class="text-blue-600 hover:underline" href="#">About</a></li>
+            </ul>
+        </footer>
     </div>
 </template>
 
