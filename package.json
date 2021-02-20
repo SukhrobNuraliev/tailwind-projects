@@ -9,6 +9,8 @@
     "generate": "nuxt generate"
   },
   "dependencies": {
+    "@nuxtjs/markdownit": "^2.0.0",
+    "@tailwindcss/typography": "^0.4.0",
     "core-js": "^3.8.3",
     "nuxt": "^2.14.12"
   },

@@ -11,6 +11,25 @@ module.exports = {
   presets: [],
   darkMode: false, // or 'media' or 'class'
   theme: {
+    extend: {
+      typography: (theme) => ({
+        DEFAULT: {
+          css: {
+            a: {
+              color: theme('colors.blue.600')
+            },
+            img: {
+              display: 'inlineblock'
+            },
+            hr: {
+              borderColor: theme('colors.gray.400'),
+              marginTop: '2em',
+              marginBottom: '2em'
+            }
+          }
+        }
+      }),
+    },
     screens: {
       sm: '640px',
       md: '768px',
@@ -860,5 +879,7 @@ module.exports = {
     wordBreak: ['responsive'],
     zIndex: ['responsive', 'focus-within', 'focus'],
   },
-  plugins: [],
+  plugins: [
+    require('@tailwindcss/typography'),
+  ],
 }
